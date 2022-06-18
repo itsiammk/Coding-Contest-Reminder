@@ -25,7 +25,7 @@ function Contact(){
                         </div>
                         <input type="text" name="" id="" placeholder="Subject"/>
                         <textarea name="" id="" cols="30" rows="8" placeholder="Message"></textarea>
-                        <button type="submit" href='https://www.google.com'>Send</button>
+                        <button type="submit">Send</button>
                     </form>
                 </div>
             </div>

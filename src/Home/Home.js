@@ -23,7 +23,7 @@ function Home() {
       <div className='middle'>
         <div className='section-one'>
             
-            <span className='spandsa'><div className='cent'>DSA</div><Link  className='cont-one' to="/about">Go</Link></span>
+            <span className='spandsa'><div className='cent'>DSA</div><Link  className='cont-one' to="/dsa">Continue</Link></span>
         </div>
         <div className='section-two'>
           
@@ -38,7 +38,7 @@ function Home() {
       </div>
       <div className='foot'>
       
-          <div className='one'>
+          <div className='one codechef'>
             CodeForces <span ><Link className='visit' to="/codeforces" >Go</Link></span>
           </div>
           <div className='one'>

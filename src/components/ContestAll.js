@@ -15,8 +15,7 @@ export default function ContestAll(){
         const m = ['Jan','Feb','March','April','May','June','July','Aug','Sept','Oct','Nov','Dec']
         const day = date.slice(8,10);
         const month = m[parseInt(date.slice(5,7))-1]
-        const time = date.slice(11,16)
-        return day+" "+month+" "+date.slice(0,4)+ "  " +time + " GMT"
+        return day+" "+month+" "+date.slice(0,4)+ "  " +date.slice(11,19)  + " UTC"
     }
     function secondsToDhms(seconds) {
         seconds = Number(seconds);

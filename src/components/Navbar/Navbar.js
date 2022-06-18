@@ -16,8 +16,8 @@ import Topcoder from '../Topcoder';
 import Google from '../Google';
 import Hackerearth from '../Hackerearth';
 import Hackerrank from '../Hackerrank';
+import Dsa from '../Dsa';
 import Contact from '../../Contact/Contact';
-
 import {
     BrowserRouter,
     Routes,
@@ -39,7 +39,7 @@ export default function Navbars(){
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
                     <Nav.Link eventKey={1} as={Link} to="/contest">Contests</Nav.Link>
-                    <Nav.Link eventKey={1} as={Link} to="/contest">DSA</Nav.Link>
+                    <Nav.Link eventKey={1} as={Link} to="/dsa">DSA</Nav.Link>
                     <Nav.Link eventKey={1} href='https://practice.geeksforgeeks.org/problem-of-the-day' target='_blank'>PoTD</Nav.Link>
                     <NavDropdown title="Menu" id="collasible-nav-dropdown">
                     <NavDropdown.Item as={Link} to="/codeforces">CodeForces</NavDropdown.Item>
@@ -82,6 +82,7 @@ export default function Navbars(){
             <Route path="/topcoder" element={<Topcoder/>} />
             <Route path="/hackerrank" element={<Hackerrank/>} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/dsa" element={<Dsa />} />
          </Routes>
             </div>
             </BrowserRouter>
