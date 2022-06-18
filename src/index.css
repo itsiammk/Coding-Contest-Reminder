@@ -458,7 +458,8 @@ linnk{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   box-shadow: 0 14px 28px 0 rgba(0,0,0,.3);
-  
+  max-height: 500px;
+  overflow-y: scroll;
   /* grid-template-rows: 20vh; */
   /* background-color: tomato; */
   

@@ -11,12 +11,19 @@ export default function Google(){
 
     const [api, setApi] = React.useState([]);
     const [api2, setApi2] = React.useState([]);
+    const [api3, setApi3] = React.useState([]);
+    
     const getUsers = async () => {
         const response = await fetch('https://kontests.net/api/v1/kick_start');
         setApi(await response.json());
         setApi2(await response.json());
         
     }
+    const geUsers = async () => {
+        const response = await fetch('https://clist.by/api/v2/contest/?username=itsiammk&api_key=3ecc260b7124ce992d2460d519ce5237d534662a');
+        setApi3(await response.json());
+    }
+    console.log(setApi3)
     function datee(date){
         const m = ['Jan','Feb','March','April','May','June','July','Aug','Sept','Oct','Nov','Dec']
         const day = date.slice(8,10);

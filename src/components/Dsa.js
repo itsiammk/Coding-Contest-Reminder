@@ -140,6 +140,13 @@ export default function Dsa(){
             'url':'https://www.codechef.com/LEARNDSA'
         },
     ]
+    const othersApi = [
+        {
+            'id':0,
+            'topic':'Which Company Hires When?',
+            'url':'https://takeuforward.org/interviews/sde-off-campus-placement-calendar-freshers/'
+        },
+    ]
     console.log(dsaApi[0])
     return (
         <div className="dsa-box">
@@ -184,6 +191,23 @@ export default function Dsa(){
             <div className="practice-box">
                     {
                         practiceApi.map((currEl) =>{
+                            return (
+                                <div className="content-box">
+                                    <div className="topic">{currEl.topic} </div>
+                                    <div className="web-link"><a target='_blank' href={currEl.url} className="web-link-a">Visit</a></div>
+                                </div>
+                            )
+                        })
+                    }
+            </div>
+            <div className="practice-box-heading">
+                <h1>
+                    Others
+                </h1>    
+            </div>     
+            <div className="practice-box">
+                    {
+                        othersApi.map((currEl) =>{
                             return (
                                 <div className="content-box">
                                     <div className="topic">{currEl.topic} </div>
